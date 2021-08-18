@@ -147,30 +147,21 @@ header nav ul li a {
   color: #e8e8e8;
 }
 
-.fourth {
-  margin: 35px auto;
+
+.fourth .container {
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
-  /* height: 350px; */
+  align-items: center;
 }
 
 .fourth__left {
   margin-right: 20px;
 }
 
-/* .attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
-} */
 .fourth__right {
-  margin-left: 30px;
+  margin: 30px;
   width: 500px;
-  display: flex;
-  flex-direction: column;
 }
 
 .fourth__right > h1 {
