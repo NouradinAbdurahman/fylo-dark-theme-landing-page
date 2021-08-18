@@ -10,6 +10,16 @@
       href="./images/favicon-32x32.png"
     />
     <link type="text/css" rel="stylesheet" href="./styles.css" />
+
+    <!-- ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
     <title>
       Frontend Mentor | Fylo landing page with dark theme and features grid
     </title>
@@ -108,59 +118,163 @@
       </div>
     </section>
 
-    <section class="container fourth">
-      <div class="fourth__left">
-        <img
-          src="./images/illustration-stay-productive.png"
-          alt="illustration-stay-productive"
-        />
-      </div>
-      <div class="fourth__right">
-        <h1>
-          Stay productive,<br />
-          where ever you are
-        </h1>
-        <p>
-          Never let location be an issue when accessing for files. Fylo has you
-          covered for all your storage needs.
-        </p>
-        <p>
-          Securely share file and folders with friends, family and colleagues
-          for live collaboration. No email attachments required.
-        </p>
-        <div class="fourth__right--cta">
-          <p>See how Fylo works.</p>
-          <img src="./images/icon-arrow.svg" alt="arrow" class="icon-arrow" />
+    <section class="fourth">
+      <div class="container">
+        <div class="fourth__left">
+          <img
+            src="./images/illustration-stay-productive.png"
+            alt="illustration-stay-productive"
+          />
+        </div>
+        <div class="fourth__right">
+          <h1>
+            Stay productive, <br />
+            where ever you are
+          </h1>
+          <p>
+            Never let location be an issue when accessing for files. Fylo has
+            you covered for all your storage needs.
+          </p>
+          <p>
+            Securely share file and folders with friends, family and colleagues
+            for live collaboration. No email attachments required.
+          </p>
+          <div class="fourth__right--cta">
+            <p>See how Fylo works.</p>
+            <img src="./images/icon-arrow.svg" alt="arrow" class="icon-arrow" />
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="container fifth">
-      <img src="./images/bg-quotes.png" alt="qoute" />
-      <div class="content">
-        <div class="card">
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea quas
-            vel ratione. Dignissimos corrupti cum ut molestiae totam iusto ipsa
-            provident hic aliquam ipsam, repellat vel quia modi labore porro!
-          </p>
-          <div class="profile">
-            <img src="./images/profile-1.jpg" alt="profile image" />
-            <div class="profile__text">
-              <h2>Name</h2>
-              <p>some discription</p>
+    <section class="fifth">
+      <div class="container">
+        <!-- <img src="./images/bg-quotes.png" alt="qoute" /> -->
+        <div class="content">
+          <div class="card">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea quas
+              vel ratione. Dignissimos corrupti cum ut molestiae totam iusto
+              ipsa provident hic aliquam ipsam,
+            </p>
+            <div class="profile">
+              <img src="./images/profile-1.jpg" alt="profile image" />
+              <div class="profile__text">
+                <p class="profile__name">Satish Petel</p>
+                <p>Founder & CEO, Middle</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea quas
+              vel ratione. Dignissimos corrupti cum ut molestiae totam iusto
+              ipsa provident hic aliquam ipsam,
+            </p>
+            <div class="profile">
+              <img src="./images/profile-2.jpg" alt="profile image" />
+              <div class="profile__text">
+                <p class="profile__name">Bruce Mckenzle</p>
+                <p>Founder & CEO, Huddle</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea quas
+              vel ratione. Dignissimos corrupti cum ut molestiae totam iusto
+              ipsa provident hic aliquam ipsam,
+            </p>
+            <div class="profile">
+              <img src="./images/profile-3.jpg" alt="profile image" />
+              <div class="profile__text">
+                <p class="profile__name">Iva Boyd</p>
+                <p>Founder & CEO, Hiddle</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <section class="sixth">
+      <div class="container">
+        <div class="content">
+          <h1>Get early access today</h1>
+          <p>
+            It only takes a minutes to sign up amd our free starter tier is
+            extremly generous. If you have any questions, our support team will
+            be happy to help you.
+          </p>
+          <div class="cta">
+            <div class="textInput">
+              <input
+                type="text"
+                value="johnappleseed@mail.com"
+                placeholder="Email"
+              />
+            </div>
+            <button>Set Started For Free</button>
+          </div>
+          <p class="errorMessage">Please enter your email address</p>
+        </div>
+      </div>
+    </section>
+
     <footer>
-      <p class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
-      </p>
+      <div class="container">
+        <div class="footer__top">
+          <a href="./index.html"
+            ><img src="./images/logo.svg" draggable="false" alt="logo image"
+          /></a>
+        </div>
+        <div class="footer__bottom">
+          <div class="location">
+            <img src="./images/icon-location.svg" alt="location" />
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+              iure maxime accusantium incidunt blanditiis voluptas? Fuga sunt
+              qui repellendus sapiente.
+            </p>
+          </div>
+
+          <div class="contact">
+            <div>
+              <img src="./images/icon-phone.svg" alt="phone" />
+              <p>+1234567890</p>
+            </div>
+            <div>
+              <img src="./images/icon-email.svg" alt="eamil" />
+              <p>example@mail.com</p>
+            </div>
+          </div>
+
+          <div class="about">
+            <p>About</p>
+            <p>Jobs</p>
+            <p>Press</p>
+            <p>Blog</p>
+          </div>
+
+          <div class="contactUs">
+            <p>Contact Us</p>
+            <p>Teams</p>
+            <p>Privacy</p>
+          </div>
+
+          <div class="social">
+            <div>
+              <ion-icon name="logo-facebook" size="small"></ion-icon>
+            </div>
+            <div>
+              <ion-icon name="logo-twitter" size="small"></ion-icon>
+            </div>
+            <div>
+              <ion-icon name="logo-instagram" size="small"></ion-icon>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

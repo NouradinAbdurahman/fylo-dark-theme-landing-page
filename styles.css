@@ -32,6 +32,15 @@ html {
   scroll-behavior: smooth;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
@@ -152,22 +161,20 @@ header nav ul li a {
   /* height: 350px; */
 }
 
+.fourth .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 .fourth__left {
   margin-right: 20px;
 }
 
-/* .attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
-} */
 .fourth__right {
-  margin-left: 30px;
+  margin: 30px;
   width: 500px;
-  display: flex;
-  flex-direction: column;
 }
 
 .fourth__right > h1 {
@@ -212,24 +219,223 @@ header nav ul li a {
   height: 100%;
 }
 .fifth {
-  margin: 30px auto;
-  position: relative;
-}
-
-.fifth img {
-  /* z-index: 1; */
+  margin: 80px auto;
 }
 
 .fifth .content {
-  z-index: 10;
-  margin-top: -20px;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 35px;
+  background: url("./images/bg-quotes.png");
+  background-repeat: no-repeat;
 }
 .fifth .content .card {
   background-color: hsl(219, 30%, 18%);
-  width: 350px;
-  height: 250px;
-  padding: 15px 10px;
+  width: 375px;
+  /* height: 200px; */
+  padding: 35px 30px 30px;
+  border-radius: 5px;
+  margin-right: 30px;
+  cursor: pointer;
 }
+
+.fifth .content .card p {
+  color: var(--White);
+}
+
+.fifth .content .profile {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+.fifth .content .profile .profile__text p {
+  font-size: small;
+  color: lightgray;
+}
+.fifth .content .profile .profile__text .profile__name {
+  font-weight: 700;
+  color: var(--White);
+}
+.fifth .content .profile img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.sixth {
+  /* background-color: rgb(218, 206, 143); */
+  margin-top: 200px;
+  position: relative;
+  z-index: 10;
+  margin-bottom: -150px;
+}
+
+.sixth .content {
+  padding: 35px 50px 25px;
+  width: 750px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  margin: auto;
+  background-color: var(--intro-and-email-sign-up-background);
+  border-radius: 5px;
+  box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.75);
+}
+
+.sixth .content h1 {
+  font-size: xx-large;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+}
+
+.sixth .content > p {
+  margin: 10px 0;
+  color: lightgray;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+
+.sixth .content .cta {
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+}
+
+.sixth .content .cta .textInput {
+  flex: 1;
+  background-color: var(--White);
+  padding: 10px;
+  margin-right: 20px;
+  color: black;
+  border-radius: 25px;
+}
+
+.sixth .content .cta .textInput input {
+  margin-left: 15px;
+  width: -webkit-fill-available;
+  border: 0;
+  outline: none;
+  font-size: small;
+}
+
+.sixth .content .cta button {
+  padding: 10px 20px;
+  border-radius: 25px;
+  color: var(--White);
+  border: 0;
+  cursor: pointer;
+  background-color: var(--Blue-inside-call-to-action-gradient);
+}
+
+.sixth .content .cta button:hover {
+  background-color: var(--Cyan-inside-call-to-action-gradient);
+}
+
+.sixth .content .errorMessage {
+  color: var(--Light-Red-error);
+  text-align: left !important;
+  margin-left: 25px;
+}
+
+footer {
+  padding-top: 200px;
+  padding-bottom: 50px;
+  background-color: var(--footer-background);
+}
+footer .footer__top {
+  height: 40px;
+  width: 100%;
+}
+
+footer .footer__bottom {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .footer__bottom .location {
+  display: flex;
+  width: 300px;
+}
+footer .footer__bottom .location img {
+  height: 15px;
+  margin-top: 5px;
+  margin-right: 20px;
+}
+footer .footer__bottom .location p {
+  color: lightgray;
+}
+
+/* logo img in footer */
+.footer__top img {
+  height: 25px;
+  user-select: none;
+}
+
+footer .footer__bottom .contact > div {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+footer .footer__bottom .contact > div p {
+  margin-left: 20px;
+  color: white;
+}
+
+footer .footer__bottom .about,
+footer .footer__bottom .contactUs {
+  display: flex;
+  flex-direction: column;
+  color: lightgray;
+}
+
+footer .footer__bottom .about p,
+footer .footer__bottom .contactUs p {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+footer .footer__bottom .about p:hover,
+footer .footer__bottom .contactUs p:hover {
+  color: var(--White);
+}
+
+footer .footer__bottom .social {
+  display: flex;
+}
+
+footer .footer__bottom .social ion-icon {
+  color: lightgray;
+}
+
+footer .footer__bottom .social > div {
+  cursor: pointer;
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+  border: 2px solid lightgray;
+  border-radius: 50%;
+}
+
+footer .footer__bottom .social > div:hover {
+  border: 2px solid var(--Blue-inside-call-to-action-gradient);
+}
+
+footer .footer__bottom .social > div:hover ion-icon {
+  color: var(--Blue-inside-call-to-action-gradient);
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
