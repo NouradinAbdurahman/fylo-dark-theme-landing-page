@@ -3,8 +3,8 @@
 
 /* Primary colors */
 :root {
-  --intro-and-email-sign-up-background:hsl(217, 28%, 15%);
-  --main-background:hsl(218, 28%, 13%);
+  --intro-and-email-sign-up-background: hsl(217, 28%, 15%);
+  --main-background: hsl(218, 28%, 13%);
   --footer-background: hsl(216, 53%, 9%);
   --testimonials-background: hsl(219, 30%, 18%);
   --White:hsl(0, 0%, 100%);
@@ -33,6 +33,7 @@ a {
 html {
   scroll-behavior: smooth;
 }
+
 body {
   font-size: 14px;
   font-family: 'Open Sans', sans-serif;
@@ -146,7 +147,17 @@ header nav ul li a {
   color: #e8e8e8;
 }
 
+.fourth {
+  margin: 35px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 350px; */
+}
 
+.fourth__left {
+  margin-right: 20px;
+}
 
 /* .attribution {
   font-size: 11px;
@@ -155,11 +166,80 @@ header nav ul li a {
 .attribution a {
   color: hsl(228, 45%, 44%);
 } */
+.fourth__right {
+  margin-left: 30px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+}
 
+.fourth__right > h1 {
+  font-size: xx-large;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-family: "Raleway", sans-serif;
+}
 
+.fourth__right > p {
+  margin: 10px 0;
+  color: lightgray;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+}
 
+.fourth__right--cta {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  color: hsl(176, 68%, 64%);
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  border-bottom: 1px solid hsl(176, 68%, 64%);
+}
+.fourth__right--cta:hover {
+  color: hsl(0, 0%, 100%);
+  border-bottom: 1px solid hsl(0, 0%, 100%);
+}
+.fourth__right--cta:hover .icon-arrow {
+  /* color: hsl(0, 0%, 100%); */
+  /* filter: invert(50%) sepia(50%) saturate(50%) hue-rotate(36deg)
+    brightness(100%) contrast(97%); */
+}
 
+.fourth__right--cta p {
+  margin-right: 5px;
+}
+.fourth__right--cta img {
+  height: 100%;
+}
+.fifth {
+  margin: 30px auto;
+  position: relative;
+}
 
+.fifth img {
+  /* z-index: 1; */
+}
+
+.fifth .content {
+  z-index: 10;
+  margin-top: -20px;
+}
+.fifth .content .card {
+  background-color: hsl(219, 30%, 18%);
+  width: 350px;
+  height: 250px;
+  padding: 15px 10px;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
 @media screen  and (max-width:768px) {
   .intro .intro-img img {
     width: 80%;
@@ -230,3 +310,4 @@ header nav ul li a {
     padding-top: 5px;
   }
 }
+
