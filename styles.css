@@ -1,3 +1,72 @@
-.test {
-  color: red;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* Primary colors */
+:root {
+  --intro-and-email-sign-up-background:hsl(217, 28%, 15%);
+  --main-background:hsl(218, 28%, 13%);
+  --footer-background: hsl(216, 53%, 9%);
+  --testimonials-background: hsl(219, 30%, 18%);
+}
+/* Primary colors */
+
+/* Global */
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/* Global */
+
+
+body {
+  font-size: 16px;
+  background-color: var(--main-background);
+}
+.container {
+  width: 90%;
+  margin: auto;
+}
+header .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header nav ul li {
+  display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
