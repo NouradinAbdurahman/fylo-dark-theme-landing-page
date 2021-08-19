@@ -172,6 +172,11 @@ header nav ul li a {
   margin-right: 20px;
 }
 
+.fourth__left img {
+  height: 400px;
+  user-select: none;
+}
+
 .fourth__right {
   margin: 30px;
   width: 500px;
@@ -265,7 +270,7 @@ header nav ul li a {
 
 .sixth {
   /* background-color: rgb(218, 206, 143); */
-  margin-top: 200px;
+  margin-top: 100px;
   position: relative;
   z-index: 10;
   margin-bottom: -150px;
@@ -347,7 +352,7 @@ header nav ul li a {
 
 footer {
   padding-top: 200px;
-  padding-bottom: 50px;
+  padding-bottom: 15px;
   background-color: var(--footer-background);
 }
 footer .footer__top {
@@ -359,6 +364,7 @@ footer .footer__bottom {
   margin-top: 30px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 footer .footer__bottom .location {
@@ -418,7 +424,7 @@ footer .footer__bottom .social ion-icon {
 
 footer .footer__bottom .social > div {
   cursor: pointer;
-  margin-left: 15px;
+  margin: 0 7.5px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -443,6 +449,72 @@ footer .footer__bottom .social > div:hover ion-icon {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+@media screen and (max-width: 1000px) {
+  .fourth .container {
+    flex-direction: column;
+  }
+
+  .fourth__left {
+    margin: auto;
+  }
+
+  .fourth__left img {
+    height: 400px;
+  }
+
+  .fourth__right {
+    margin-top: 40px;
+  }
+
+  .fourth__right > h1 {
+    font-size: x-large;
+  }
+
+  .fourth__right > p {
+    margin: 20px 0;
+    font-size: 17px;
+  }
+
+  .fourth__right--cta p {
+    font-size: large;
+  }
+
+  .fifth .content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .fifth .content .card {
+    margin-bottom: 30px;
+  }
+
+  .sixth .content {
+    padding: 25px 35px 15px;
+    width: 90%;
+  }
+  .sixth .content .cta {
+    flex-direction: column;
+  }
+
+  .sixth .content .cta .textInput {
+    width: 100%;
+    padding: 20px;
+    border-radius: 50px;
+    margin-bottom: 30px;
+  }
+
+  /* .sixth .content .cta .textInput input {
+  margin-left: 15px;
+} */
+
+  .sixth .content .cta button {
+    width: 100%;
+    padding: 20px;
+    border-radius: 50px;
+    font-size: large;
+  }
+}
 @media screen and (max-width: 768px) {
   .intro .intro-img img {
     width: 80%;
@@ -458,6 +530,60 @@ footer .footer__bottom .social > div:hover ion-icon {
   .feature {
     width: 90%;
     text-transform: capitalize;
+  }
+
+  .fourth__left {
+    margin: auto;
+    width: 95%;
+    display: flex;
+  }
+
+  .fourth__left img {
+    margin: auto;
+    height: 290px;
+  }
+
+  .fourth__right {
+    width: 90%;
+  }
+  footer .footer__top {
+    width: 100%;
+    margin: 30px auto;
+  }
+  footer .footer__bottom {
+    width: 100%;
+    margin: auto;
+    flex-direction: column;
+  }
+
+  footer .footer__bottom .location,
+  footer .footer__bottom .contact,
+  footer .footer__bottom .about,
+  footer .footer__bottom .contactUs,
+  footer .footer__bottom .social {
+    margin-bottom: 35px;
+  }
+
+  footer .footer__bottom .social {
+    justify-content: center;
+  }
+
+  .fifth .content .card {
+    margin: auto;
+    margin-bottom: 30px;
+  }
+
+  .sixth .content h1 {
+    font-size: large;
+  }
+
+  .sixth .content {
+    width: 100%;
+  }
+
+  /* footer img */
+  .footer__top img {
+    height: 40px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -498,6 +624,11 @@ footer .footer__bottom .social > div:hover ion-icon {
   .feature img {
     width: 20%;
   }
+
+  .fourth__left img {
+    margin: auto;
+    height: 230px;
+  }
 }
 @media screen and (max-width: 320px) {
   .intro-info {
@@ -511,5 +642,10 @@ footer .footer__bottom .social > div:hover ion-icon {
     text-align: end;
     font-size: 0.7rem;
     padding-top: 5px;
+  }
+
+  .fourth__left img {
+    margin: auto;
+    height: 200px;
   }
 }
